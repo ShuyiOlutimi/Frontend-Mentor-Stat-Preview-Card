@@ -72,7 +72,6 @@ p {
     background-color: var(--clr-deeppurple);
     max-width: 68rem;
     border-radius: 8px;
-    margin: auto auto;
 }
 
 .absolute-center {
@@ -86,7 +85,6 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 1rem;
 }
 
 @media (min-width: 40rem) {
@@ -126,7 +124,7 @@ p {
 
 @media (min-width: 40rem) {
     .hero-text {
-        padding-inline-start: 72px;
+        padding-inline-start: 71.5px;
         padding-inline-end: 95px;
         padding-block-start: 71px;
         padding-block-end: 59px;
@@ -155,6 +153,10 @@ p {
     text-transform: uppercase;
     line-height: 25px;
     margin-block-start: 72px;
+}
+
+.metrics p {
+    line-height: 25px;
 }
 
 @media (min-width: 40em) {
