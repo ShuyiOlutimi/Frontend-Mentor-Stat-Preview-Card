@@ -103,6 +103,7 @@ p {
 .hero-image {
     background-color: var(--clr-lightpurple);
 }
+
 .hero-image img {
     object-fit: cover;
     height: 100%;
