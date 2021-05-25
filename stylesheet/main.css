@@ -119,6 +119,7 @@ p {
 
 .hero-text {
     padding: 2rem;
+    flex: 1 0 50%;
 }
 
 
