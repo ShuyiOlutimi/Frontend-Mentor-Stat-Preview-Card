@@ -1,0 +1,154 @@
+/* resets */
+:root {
+    /* Font Family*/
+    --ff-inter: 'Inter', sans-serif;
+    --ff-lexend: 'Lexend Deca', sans-serif;
+
+    /* Font Sizes */
+    --fs-100: 0.75rem;
+    --fs-200: 0.938rem;
+    --fs-300: 1.5rem;
+    --fs-400: 2.25rem;
+
+    /* Font Weights */
+    --fw-400: 400;
+    --fw-700: 700;
+
+    /* Colors */
+    --clr-white: #FFFFFF;
+    --clr-deeppurple: #1B1937;
+    --clr-lightpurple: #AB5CDB;
+    --clr-blackout: #000;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+body {
+    padding: 1rem;
+    color: var(--clr-white);
+    background-color: var(--clr-blackout);
+    font-family: var(--ff-inter);
+    text-align: center;
+}
+
+@media (min-width: 40rem) {
+    body {
+        text-align: left;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: var(--fs-400);
+    line-height: 44px;
+}
+
+p {
+    font-size: var(--fs-200);
+    line-height: 25px;
+}
+
+.wrapper {
+    background-color: var(--clr-deeppurple);
+    max-width: 68rem;
+    border-radius: 8px;
+    margin: auto auto;
+}
+
+.absolute-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+@media (min-width: 40rem) {
+    .split {
+        flex-direction: row;
+    }
+
+    .split img {
+        order: 2;
+    }
+}
+
+@media (min-width: 40rem) {
+    .hero-image {
+        order: 2;
+    }
+}
+
+.hero-image {
+    background-color: var(--clr-lightpurple);
+}
+.hero-image img {
+    object-fit: cover;
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+
+.hero-text {
+    padding: 2rem;
+}
+
+
+@media (min-width: 40rem) {
+    .hero-text {
+        padding-inline-start: 72px;
+        padding-inline-end: 95px;
+        padding-block-start: 71px;
+        padding-block-end: 59px;
+    }
+    
+}
+
+.cta span {
+    color: var(--clr-lightpurple);
+}
+
+.cta p {
+    margin-block-start: 25px;
+}
+
+.metrics span {
+    display: inline-block;
+    line-height: 29.05px;
+    font-size: var(--fs-300);
+    font-weight: var(--fw-700);
+}
+
+.metrics {
+    text-align: center;
+    font-size: var(--fs-100);
+    text-transform: uppercase;
+    line-height: 25px;
+    margin-block-start: 72px;
+}
+
+@media (min-width: 40em) {
+    .metrics p {
+        text-align: left;
+    }
+}
