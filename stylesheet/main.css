@@ -46,6 +46,8 @@ body {
 
 @media (min-width: 40rem) {
     body {
+        margin: 0;
+        padding: 0;
         text-align: left;
         height: 100vh;
     }
