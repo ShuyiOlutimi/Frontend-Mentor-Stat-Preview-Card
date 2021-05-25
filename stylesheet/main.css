@@ -57,6 +57,7 @@ img {
 h1 {
     font-size: var(--fs-400);
     line-height: 44px;
+    white-space: nowrap;
 }
 
 p {
