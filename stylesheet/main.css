@@ -163,6 +163,17 @@ p {
 
 @media (min-width: 40em) {
     .metrics p {
+        display: inline-block;
+    }
+    .metrics p:nth-child(2) {
+        margin-inline-start: 63px;
+        margin-inline-end: 60px;
+    }
+}
+
+
+@media (min-width: 40em) {
+    .metrics p {
         text-align: left;
     }
 }
