@@ -102,6 +102,7 @@ p {
 .hero-image {
     background-color: var(--clr-lightpurple);
     border-radius: 8px 8px 0 0;
+    flex: 1 0 50%;
 }
 
 @media (min-width: 40rem) {
